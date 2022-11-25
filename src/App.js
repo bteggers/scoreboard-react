@@ -21,6 +21,7 @@ export default function App() {
   const [roundScore, setRoundScore] = useState(0);
   
   return (
+    <div>
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Layout />}>
@@ -33,5 +34,9 @@ export default function App() {
         </Route>
       </Routes>
     </BrowserRouter>
+    <div className="footer">
+      <p>Made by Bryce Eggers, link to <a href="https://bteggers@github.com/bteggers/scoreboard-react.git">Github</a></p>
+    </div>
+    </div>
   );
 }
